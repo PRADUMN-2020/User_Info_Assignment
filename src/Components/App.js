@@ -5,7 +5,7 @@ import {
   Avatar,
   IconButton
 } from '@mui/material';
-
+ 
 import Header from './Header';
 import EditModal from './EditModal';
 import DeleteModal from './DeleteModal';
@@ -192,7 +192,7 @@ const App = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <Header addUser={controlSetOpen} />
+      <Header controlSetOpen={controlSetOpen} />
       <div className="overflow-x-auto" style={{ backgroundColor: "#F6FFDE", boxShadow:"10px 10px 20px black", borderRadius:"1%"}}>
         <DataGrid
           style={{fontSize:"14px", fontFamily: 'Roboto Condensed',}}
